@@ -1,0 +1,25 @@
+{
+  "name": "touchberry-led-effects",
+  "version": "1.0.0",
+  "description": "NodeJS Library for TouchBerry RGB LED Effects.",
+  "main": "src/effects.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioBoost/touchberry-led-effects.git"
+  },
+  "keywords": [
+    "touchberry",
+    "rgb",
+    "led",
+    "effects"
+  ],
+  "author": "Nico De Witte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BioBoost/touchberry-led-effects/issues"
+  },
+  "homepage": "https://github.com/BioBoost/touchberry-led-effects#readme"
+}
