@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/BioBoost/touchberry-led-effects/issues"
   },
-  "homepage": "https://github.com/BioBoost/touchberry-led-effects#readme"
+  "homepage": "https://github.com/BioBoost/touchberry-led-effects#readme",
+  "dependencies": {
+    "rgbledbar": "^1.0.0"
+  }
 }
