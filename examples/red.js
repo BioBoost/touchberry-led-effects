@@ -9,7 +9,8 @@ const i2c1 = i2c.open(1, (err) => {
 
   let ledbar = new RGBLedBar(i2c1);
   let effectsManager = new Effects.EffectManager();
-  effectsManager.set_effect(new Effects.SingleColorEffect(ledbar, Color.rgb(100, 0, 0)));
+  effectsManager.add(new Effects.SingleColorEffect(ledbar, Color.rgb(100, 0, 0)));
+  effectsManager.start();
 
   setTimeout(() => {
     effectsManager.stop();

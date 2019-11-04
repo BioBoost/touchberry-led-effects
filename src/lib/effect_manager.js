@@ -1,24 +1,25 @@
 class EffectManager {
   constructor() {
-    this.set_effect(null);
+    this.effects = [];
   }
 
-  set_effect(effect) {
+  clear() {
     this.stop();
-    this.effect = effect;
-    this.start();
+    this.effects = [];
   }
 
-  stop() {
-    if (this.effect) {
-      this.effect.stop();
+  add(effect) {
+    if (effect) {
+      this.effects.push(effect);
     }
   }
 
   start() {
-    if (this.effect) {
-      this.effect.start();
-    }
+    this.effects.forEach(eff => eff.start());
+  }
+
+  stop() {
+    this.effects.forEach(eff => eff.stop());
   }
 }
 
