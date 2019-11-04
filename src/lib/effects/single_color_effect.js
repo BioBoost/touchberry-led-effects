@@ -2,8 +2,8 @@ const Effect = require('./effect')
 const RGBLedBar = require('rgbledbar');
 
 class SingleColorEffect extends Effect {
-  constructor(rgbledbar, color) {
-    super(rgbledbar);
+  constructor(ledbar, color) {
+    super(ledbar);
     this.color = color;
   }
 

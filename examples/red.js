@@ -8,14 +8,11 @@ const i2c1 = i2c.open(1, (err) => {
   console.log("Opened i2c bus successfully");
 
   let ledbar = new RGBLedBar(i2c1);
-
-  let effectsManager = new Effects.EffectManager(ledbar);
-  let red = new Effects.SingleColorEffect(ledbar, Color.rgb(100, 0, 0));
-
-  effectsManager.set_effect(red);
+  let effectsManager = new Effects.EffectManager();
+  effectsManager.set_effect(new Effects.SingleColorEffect(ledbar, Color.rgb(100, 0, 0)));
 
   setTimeout(() => {
-    effectsManager.set_effect(null);
+    effectsManager.stop();
   }, 5000);
 
 });

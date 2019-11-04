@@ -1,8 +1,7 @@
-const RGBLedBar = require('rgbledbar');
-
 class Effect {
-  constructor(rgbledbar) {
-    this.rgbledbar = rgbledbar;
+
+  constructor(ledbar) {
+    this.rgbledbar = ledbar;
   }
 
   start() {}
